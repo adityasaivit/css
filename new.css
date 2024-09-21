@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+
+body{
+    
+    padding:0px;
+    margin:0px;
+    font-family:var(--sans);
+    background-color:var(--black);
+    color:var(--white);
+    font-size:var(--font-size);
+    /* margin is 1em for every element */
+    
+
+}
+.intro{
+    /* background-color:blue; */
+    padding:10rem;
+}
+
+
+*::before,
+*::afer{
+    box-sizing:inherit;
+}
+
+h1,h2,h3{
+    margin:0;
+}
+
+a{
+    color:var(--magenta);
+}
+
+a:hover{
+    color:var(--hotmag);
+    text-decoration:none;
+}
+
+.intro{
+    
+    max-width:1200px;
+}
+.intro p{
+    font-size:1rem;
+    line-height:1.5rem;
+}
+.intro p span{
+    padding:1rem 0rem;
+    display:block;
+    font-family:var(--sans);
+    color:var(--aqua);
+    font-size:4rem;
+    font-weight:normal;
+}
+
+
+
+
+/* universal selector will apply to all the elements in the html */
+/* includes all the elements of the document */
+/* universal selector has no specificity in it */
+/* universal selector has the least priority */
+/* easily over written */
+/* :: was the pseudo element */
+/* pseudo class has specificity at the class*/
+
+/* for links always have an underlines */
+
+/* line height was a proportion */
+
+
+/* a nav bar */
+
+nav{
+    font-family:var(--mono);
+    font-size:80%;
+    padding:1rem;
+}
+
+nav a h1{
+
+    font-family:var(--sans);
+
+}
+nav ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    gap:3rem;
+}
+
+nav a{
+
+    color:var(--white);
+    text-decoration:none;
+    display:block;
+    padding:0.5rem;
+
+}
+
+nav a:hover{
+
+    color:var(--magenta);
+    /* background-color:var(--white); */
+    cursor:pointer;
+    
+}
+/* hover , unvisited ,visited, focus, active */
+/* pseudo classs which represent the state of the links of the systems
+ */
+
+ /* flex basis used for to defint the how wide a elemet can be */
+
+
+ nav li:first-child
+ {
+    flex-basis: 100%;
+    text-align:center;
+ }
+
+
+
+
+.linked{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0px;
+}
+.linkedsvg{
+    width:2rem;
+    color:var(--white);
+}
+
+nav [class*="li"]{
+    color:aqua;
+}
+
+.button{
+    background-color:var(--magenta);
+    padding:0.5rem;
+    border-radius:0.5rem;
+}
+.button:hover{
+    color:var(--white);
+    background-color:var(--hotmag);
+}
+
+@media(min-width:900px)
+{
+    nav {
+        max-width:1200px;
+        margin:0 auto;
+    }
+
+    nav li:first-child{
+        flex-basis:auto;
+        text-align:left;
+        margin-right:auto;
+    }
+
+}
+
+.footer{
+    
+    display:flex;
+    justify-content:center;
+    
+}
+
+.fcontent{
+    max-width:400px;
+    text-align:center;
+
+}
+.fcontent h2{
+    padding:0px;
+}
+
+.icons{
+    display:flex;
+    width:80%;
+    justify-content:center;
+    padding:1rem;
+    gap:1rem;
+    
+}
+
+.icons svg{
+    width:5rem;
+    color:var(--magenta);
+    height:2rem;
+}
+
+.intro{
+    max-width:1200px;
+    padding-top:4rem;
+    padding-right:1rem;
+    padding-bottom:10rem;
+    text-align:left;
+    margin-right:auto;
+}
+
+
+
